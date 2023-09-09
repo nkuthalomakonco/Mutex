@@ -30,7 +30,7 @@ Module Module1
         'Place code to access non-reentrant resources here.
 
         'Simulate some work.
-        Thread.Sleep(3000)
+        Thread.Sleep(1000)
         Console.WriteLine("{0} is leaving the protected area", Thread.CurrentThread.Name)
         'Release the Mutex.
         mut.ReleaseMutex()
